@@ -556,7 +556,6 @@ fn load_obj_buf<B: BufRead>(reader: &mut B, base_path: Option<&Path>) -> LoadRes
                         Some(m) => mat_id = Some(*m),
                         None => {
                             mat_id = None;
-                            println!("Warning: Object {} refers to unfound material: {}", name, mat_name);
                         }
                     }
                 } else {
